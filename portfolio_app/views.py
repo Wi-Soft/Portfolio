@@ -2,7 +2,62 @@ from django.shortcuts import render
 from .models import Project
 
 def index(request):
-    return render(request, 'index.html')
+    experiences = [
+        {
+            "period": "2024",
+            "title": "Django Portfolio Development",
+            "company": "Personal Projects",
+            "responsibilities": [
+                "Built modular Django applications with reusable templates.",
+                "Implemented Django model relationships and database migrations.",
+                "Created RESTful APIs using Django REST Framework.",
+                "Configured static and media assets for production-ready deployment."
+            ]
+        },
+        {
+            "period": "2023",
+            "title": "Web Application Support",
+            "company": "Freelance / Contract",
+            "responsibilities": [
+                "Designed and deployed Django sites using Git and CI/CD.",
+                "Enhanced application performance and user interface workflows.",
+                "Maintained Django settings, URL routing, and template rendering.",
+                "Implemented test-driven development for reliable feature rollouts."
+            ]
+        }
+    ]
+
+    education_data = [
+        {
+            "icon": "🎓",
+            "period": "Jan 2023 - Dec 2025",
+            "institution": "eMobilis Technology Training Institute",
+            "degree": "Diploma in Information Technology",
+            "details": "Distinction"
+        },
+        {
+            "icon": "🏫",
+            "period": "2017 - 2021",
+            "institution": "Motiret Secondary School",
+            "degree": "Kenya Certificate of Secondary Education (KCSE)",
+            "details": "Grade: C (plain)"
+        },
+        {
+            "icon": "📘",
+            "period": "2007 - 2016",
+            "institution": "Chesegem Primary School",
+            "degree": "Kenya Certificate of Primary Education (KCPE)",
+            "details": "Score: 291 out of 500"
+        }
+    ]
+
+    context = {
+        "experiences": experiences,
+        "education": education_data
+    }
+
+    return render(request, 'index.html', context)
+
 
 def contact(request):
     return render(request, 'contact.html')
@@ -11,11 +66,6 @@ def contact(request):
 def header(request):   
     return render(request, 'header.html')
 
-def experience(request):
-    return render(request, 'experience.html')
-
-def about(request):
-    return render(request, 'about.html')
 
 def project(request):
     return render(request, 'project.html')
@@ -64,14 +114,25 @@ def education(request):
 def experience(request):
     experiences = [
         {
-            "period": "Oct 2022 - March 2023",
-            "title": "Annotation",
-            "company": "Remotask",
+            "period": "2024" - "Present",
+            "title": "Django Portfolio Development",
+            "company": "Personal Projects",
             "responsibilities": [
-                "Task Execution & Performance",
-                "Training and Onboarding Responsibilities",
-                "Quality Assurance & Data Review",
-                "Legal & Professional Obligations"
+                "Built modular Django applications with reusable templates.",
+                "Implemented Django model relationships and database migrations.",
+                "Created RESTful APIs using Django REST Framework.",
+                "Configured static and media assets for production-ready deployment."
+            ]
+        },
+        {
+            "period": "2023",
+            "title": "Web Application Support",
+            "company": "Freelance / Contract",
+            "responsibilities": [
+                "Designed and deployed Django sites using Git and CI/CD.",
+                "Enhanced application performance and user interface workflows.",
+                "Maintained Django settings, URL routing, and template rendering.",
+                "Implemented test-driven development for reliable feature rollouts."
             ]
         }
     ]
