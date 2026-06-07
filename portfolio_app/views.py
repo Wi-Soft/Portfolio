@@ -2,10 +2,7 @@ from django.shortcuts import render
 from .models import Project
 
 def index(request):
-    return render(request, 'index.html', {
-        'title': 'Portfolio Home',
-        'message': 'Welcome to your portfolio site!',
-    })
+    return render(request, 'index.html')
 
 def contact(request):
     return render(request, 'contact.html')
