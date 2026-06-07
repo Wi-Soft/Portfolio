@@ -4,25 +4,31 @@ from .models import Project
 def index(request):
     experiences = [
         {
-            "period": "2024",
-            "title": "Django Portfolio Development",
-            "company": "Personal Projects",
+            "period": "Jan 2025 - To-Date",
+            "title": "Casual Worker",
+            "company": "Central Bank of Kenya",
             "responsibilities": [
-                "Built modular Django applications with reusable templates.",
-                "Implemented Django model relationships and database migrations.",
-                "Created RESTful APIs using Django REST Framework.",
-                "Configured static and media assets for production-ready deployment."
+                "General cleaning",
+                "Cash handling support",
+                "Handle confidential documents",
+                "Data Entry & Records Management",
+                "Scanning cheques and managing clearing documents",
+                "Team Collaboration",
+                "Operational Support",
+                "Filing & Organization",
+                "Confidentiality and Integrity",
+                "Adherence to Procedures"
             ]
         },
         {
-            "period": "2023",
-            "title": "Web Application Support",
-            "company": "Freelance / Contract",
+            "period": "Oct 2022 - March 2023",
+            "title": "Annotation",
+            "company": "Remotask",
             "responsibilities": [
-                "Designed and deployed Django sites using Git and CI/CD.",
-                "Enhanced application performance and user interface workflows.",
-                "Maintained Django settings, URL routing, and template rendering.",
-                "Implemented test-driven development for reliable feature rollouts."
+                "Task Execution & Performance",
+                "Training and Onboarding Responsibilities",
+                "Quality Assurance",
+                "Legal & Professional Obligations"
             ]
         }
     ]
@@ -63,19 +69,20 @@ def contact(request):
     return render(request, 'contact.html')
 
 
-def header(request):   
+def header(request):
     return render(request, 'header.html')
 
 
 def project(request):
     return render(request, 'project.html')
+
+
 def skills(request):
     return render(request, 'skills.html')
 
+
 def base(request):
     return render(request, 'base.html')
-
-
 
 
 def education(request):
@@ -110,29 +117,34 @@ def education(request):
     return render(request, "education.html", context)
 
 
-
 def experience(request):
     experiences = [
         {
-            "period": "2024" - "Present",
-            "title": "Django Portfolio Development",
-            "company": "Personal Projects",
+            "period": "Jan 2025 - To-Date",
+            "title": "Casual Worker",
+            "company": "Central Bank of Kenya",
             "responsibilities": [
-                "Built modular Django applications with reusable templates.",
-                "Implemented Django model relationships and database migrations.",
-                "Created RESTful APIs using Django REST Framework.",
-                "Configured static and media assets for production-ready deployment."
+                "General cleaning",
+                "Cash handling support",
+                "Handle confidential documents",
+                "Data Entry & Records Management",
+                "Scanning cheques and managing clearing documents",
+                "Team Collaboration",
+                "Operational Support",
+                "Filing & Organization",
+                "Confidentiality and Integrity",
+                "Adherence to Procedures"
             ]
         },
         {
-            "period": "2023",
-            "title": "Web Application Support",
-            "company": "Freelance / Contract",
+            "period": "Oct 2022 - March 2023",
+            "title": "Annotation",
+            "company": "Remotask",
             "responsibilities": [
-                "Designed and deployed Django sites using Git and CI/CD.",
-                "Enhanced application performance and user interface workflows.",
-                "Maintained Django settings, URL routing, and template rendering.",
-                "Implemented test-driven development for reliable feature rollouts."
+                "Task Execution & Performance",
+                "Training and Onboarding Responsibilities",
+                "Quality Assurance",
+                "Legal & Professional Obligations"
             ]
         }
     ]
@@ -142,3 +154,5 @@ def experience(request):
     }
 
     return render(request, "experience.html", context)
+
+
