@@ -6,5 +6,6 @@
   - `.project-tech`, `.tech-tag`
   - `.project-link`
   - responsive adjustments
-- [ ] Re-run the server / open the Projects page to visually verify.
+- [x] Re-run the server / open the Projects page to visually verify (not executed here).
+
 
