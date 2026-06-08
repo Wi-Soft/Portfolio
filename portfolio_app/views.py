@@ -19,17 +19,6 @@ def index(request):
                 "Confidentiality and Integrity",
                 "Adherence to Procedures"
             ]
-        },
-        {
-            "period": "Oct 2022 - March 2023",
-            "title": "Annotation",
-            "company": "Remotask",
-            "responsibilities": [
-                "Task Execution & Performance",
-                "Training and Onboarding Responsibilities",
-                "Quality Assurance",
-                "Legal & Professional Obligations"
-            ]
         }
     ]
 
@@ -40,6 +29,13 @@ def index(request):
             "institution": "eMobilis Technology Training Institute",
             "degree": "Diploma in Information Technology",
             "details": "Distinction"
+        },
+          {
+            "icon": "📘",
+            "period": "2021 October - 2021 Novermber",
+            "institution": "Infotect college",
+            "degree": "Computer Packages",
+            "details": "Pass"
         },
         {
             "icon": "🏫",
