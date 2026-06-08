@@ -1,25 +1,66 @@
 ﻿{% load static %}
-{% block title %}{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alphonce Rotich</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  </head>
+  <body>
 
-{% block content %}
-<header class='header'>
-    <div class='header-content'>
-        <div class='profile-image-container'>
-            <img src='/static/image/profile.jpeg' alt='Alphonce Rotich' class='profile-image' />
-            <div class='image-overlay'>
-                <span class='overlay-text'>Software Engineer</span>
-            </div>
+    <header class="header">
+      <div class="header-content">
+
+        <div class="profile-image-container">
+          <img src="{% static 'image/profile.jpeg' %}" alt="Alphonce Rotich" class="profile-image">
+          <div class="image-overlay">
+            <span class="overlay-text">Software Engineer</span>
+          </div>
         </div>
-        <div class='header-info'>
-            <h1>Alphonce Rotich</h1>
-            <p>Software Engineer</p>
+
+        <div class="header-info">
+          <h1>Alphonce Rotich</h1>
         </div>
-        <div class='contact-info'>
-            <a href='https://www.linkedin.com/in/alphonce-rotich/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>
-            <a href='mailto:alphoncerotich30@gmail.com'>alphoncerotich30@gmail.com</a>
-            <span>+254 708 477 938</span>
+
+        <div class="contact-info">
+          <a href="https://www.linkedin.com/in/alphonce-rotich/" target="_blank" rel="noopener noreferrer">
+            <i class="ti ti-brand-linkedin"></i> LinkedIn
+          </a>
+<a href="mailto:alphoncerotich30@gmail.com" title="Click to send a message to alphoncerotich30@gmail.com">
+  <i class="ti ti-mail"></i> alphoncerotich30@gmail.com
+</a>
+          <span>
+            <i class="ti ti-phone"></i> +254 708 477 938
+          </span>
         </div>
-    </div>
-</header>
-{% endblock %}
+
+      </div>
+    </header>
+
+  </body>
+</html>
+
+
+<style>
+    .contact-info a,
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.contact-info i {
+  font-size: 18px;
+  color: #fff;
+}
+.contact-info a:hover {
+    color: #d6e8f7
+}
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+</style>
