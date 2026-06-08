@@ -101,11 +101,12 @@ body {
 
 .section-title {
   color: #2a5298;
-  border-bottom: 3px solid #4a90e2;
+  border-bottom: 2px solid #4a90e2;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
 }
+
 
 /* Hero Section */
 .hero {
@@ -270,7 +271,7 @@ body {
 }
 
 .tech-tag {
-  background: #e3f2fd;
+  background: #fde3e9;
   color: #1e3c72;
   padding: 0.3rem 0.7rem;
   border-radius: 15px;
@@ -402,6 +403,58 @@ body {
   }
 }
 /* project */
+#projects.section {
+  background: #000;
+  color: #fff;
+}
+
+#projects .section-title {
+  color: #fff;
+  border-bottom-color: #4a90e2;
+}
+
+/* Projects: force 2-column layout (each card side-by-side) */
+#projects .section-double-content,
+.section-double-content {
+  display: grid;
+  /* Two cards will appear per row (2-column layout) */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+#projects .section-double-content > * {
+  min-width: 0;
+}
+
+
+@media (max-width: 768px) {
+  #projects .section-double-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+#projects .skill-category {
+  background: rgba(255, 255, 255, 0.06);
+  border-left-color: #4a90e2;
+}
+
+
+#projects .skill-category p,
+#projects .skill-category h3 {
+  color: #fff;
+}
+
+#projects .view-btn {
+  border-color: #4a90e2;
+  color: #4a90e2;
+}
+
+#projects .view-btn:hover {
+  background: #4a90e2;
+  color: #fff;
+}
+
 .projects-section {
   padding: 2rem 0;
   background: #fff;
@@ -423,64 +476,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
 
-.project-card {
-  background: #fff;
-  border: 1px solid #c8daf0;
-  border-left: 4px solid #1a56a0;
-  padding: 1.25rem 1.25rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.project-card h2 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #1a56a0;
-  margin: 0;
-  text-decoration: none;
-}
-.project-card h2 a {
-  text-decoration: none;
-  color: #1a56a0;
-}
-
-.project-card .desc {
-  font-size: 14px;
-  color: #444;
-  margin: 0;
-  line-height: 1.65;
-  flex: 1;
-}
-
-.project-card .tech {
-  font-size: 13px;
-  color: #1a56a0;
-  margin: 0;
-}
-
-.view-btn {
-  align-self: flex-start;
-  margin-top: 6px;
-  background: transparent;
-  border: 1.5px solid #1a56a0;
-  border-radius: 4px;
-  padding: 5px 14px;
-  font-size: 13px;
-  color: #1a56a0;
-  cursor: pointer;
-}
-
-.view-btn:hover {
-  background: #1a56a0;
-  color: #fff;
-}
 /* Contact section */
 .contact-section {
   padding: 2rem 0;

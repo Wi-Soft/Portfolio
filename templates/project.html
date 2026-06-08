@@ -1,21 +1,50 @@
-﻿    {% load static %}
+﻿{% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 {% block title %}{% endblock %}
-      <section id="projects" class="section">
-        <h2 class="section-title">Projects</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Bidaxp</h3>
-            <p>BidaXP is a Kenyan-based business growth platform that unifies business intelligence, professional training, marketplace commerce, and technology consulting into a single ecosystem.</p>
-          <a href="https://bidaxp.com/" target="_blank" class="view-btn">View project</a>
 
-         </div>
-          <div class="skill-category">
-            <h3>BestLady</h3>
-            <p>Kenya's leading retail and wholesale beauty chain, famous for its vibrant, bright pink-branded shops.</p>
-            <a href="https://bestlady.onrender.com/" target="_blank" class="view-btn">View project</a>
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
 
-         </div>
+  <div class="projects-grid">
+    <article class="project-card">
+      <header class="project-header">
+        <h3>Bidaxp</h3>
+      </header>
+
+      <div class="project-body">
+        <p>BidaXP is a Kenyan-based business growth platform that unifies business intelligence, professional training, marketplace commerce, and technology consulting into a single ecosystem.</p>
+
+        <div class="project-tech"
+          <span class="tech-tag">Business Intelligence</span>
+          <span class="tech-tag">Training</span>
+          <span class="tech-tag">Marketplace</span>
         </div>
-      </section>
+
+        <a href="https://bidaxp.com/" target="_blank" rel="noopener noreferrer" class="project-link">View project</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <header class="project-header">
+        <h3>BestLady</h3>
+      </header>
+
+      <div class="project-body">
+
+        <p>Kenya's leading retail and wholesale beauty chain, famous for its vibrant, bright pink-branded shops.</p>
+
+        <div class="project-tech" aria-label="Project technologies">
+          <span class="tech-tag">Retail</span>
+          <span class="tech-tag">Wholesale</span>
+          <span class="tech-tag">Beauty</span>
+        </div>
+
+        <a href="https://bestlady.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link">View project</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+
 

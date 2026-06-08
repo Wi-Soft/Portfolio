@@ -1,14 +1,18 @@
-﻿      <section id="education" class="section education">
+﻿﻿      <section id="education" class="section education">
         <h2 class="section-title">Education</h2>
         <div class="education-list">
           {% for item in education %}
           <article class="education-item">
-            <div class="education-details">
-              <h3>{{ item.institution }}</h3>
-              <p>{{ item.degree }} | {{ item.period }}</p>
-              <p>{{ item.details }}</p>
+            <div class="education-row" style="display:flex; flex-direction:column; gap:16px; align-items:flex-start;">
+              <h3 style="flex:1; color: #1a56a0;">{{ item.institution }}</h3>
+              <div style="flex:1;"><strong>{{ item.degree }}</strong></div>
+              <div style="flex:1;">{{ item.period }}</div>
+              <div style="flex:1;">{{ item.details }}</div>
+
             </div>
           </article>
           {% endfor %}
         </div>
       </section>
+
+
