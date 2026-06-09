@@ -32,7 +32,7 @@ def index(request):
         },
           {
             "icon": "📘",
-            "period": "2021 October - 2021 Novermber",
+            "period": "2021 October - 2021 November",
             "institution": "Infotect college",
             "degree": "Computer Packages",
             "details": "Pass"
